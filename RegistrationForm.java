@@ -58,29 +58,17 @@ public class RegistrationForm extends JFrame {
     countryBox = new JComboBox<>(countries);
 
     add(new JLabel("Select Country:"));
-
     add(countryBox);
-
-    // Text Area
-
+    
     addressArea = new JTextArea(3, 20);
-
     JScrollPane scroll = new JScrollPane(addressArea);
-
     add(new JLabel("Enter Address:"));
-
     add(scroll);
 
-    // Submit Button
-
     submitBtn = new JButton("Submit");
-
     add(submitBtn);
 
-    // Action Listener for Submit
-
     submitBtn.addActionListener(new ActionListener() {
-
       public void actionPerformed(ActionEvent e) {
 
         String firstName = firstNameField.getText();
@@ -103,9 +91,7 @@ public class RegistrationForm extends JFrame {
           gender = "Not selected";
 
         String country = (String) countryBox.getSelectedItem();
-
         String address = addressArea.getText();
-
         JOptionPane.showMessageDialog(null,
 
             "First Name: " + firstName + "\n" +
@@ -119,9 +105,7 @@ public class RegistrationForm extends JFrame {
       }
 
     });
-
     setVisible(true);
-
   }
 
   public static void main(String[] args) {
