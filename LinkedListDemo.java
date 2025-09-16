@@ -32,7 +32,7 @@ public class LinkedListDemo {
         System.out.println("Linked List :" + ll1);
         System.out.println("LL displayed using Iterator:");
 
-        Iterator it = ll1.iterator();
+        Iterator it = ll1.descendingIterator();
         while (it.hasNext()) {
             System.out.println(it.next());
         }
